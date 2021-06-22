@@ -1,0 +1,187 @@
+.sub-head h2{
+    margin-bottom: .5em;
+    font-size: 15vw;
+    line-height: .4;
+    letter-spacing: -.1em;
+    text-align: right;
+    color: #f6f6f6;
+    animation: ink 1.5s both;
+    font-weight: 700;
+}
+
+.sub-head h3{
+    width: 66.666666%;
+    margin: 1em auto 0;
+    font-size: 3.5vw;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+
+.sub-head{
+    margin: 0 0 4vw;
+}
+
+.sub-head h3 span{
+    display: inline-block;
+    padding-right: .1em;
+}
+
+.container{
+    position: relative;
+    width: 66.666666%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.gall {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40vw;
+    padding: 0 0 5em;
+}
+
+.gall .screen {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+    width: 40%;
+    transform: translate(0,-50%);
+}
+
+.gall>li:nth-of-type(2n-1) {
+    margin-left: 50%;
+}
+
+.gall>li {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.gall-bg, .gall-bg:before, .gall-bg:after {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vw;
+    height: 200vw;
+    min-width: 200vh;
+    min-height: 200vh;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+
+.tab-menu{
+    overflow-y: auto;
+    margin-bottom: 80px;
+    white-space: nowrap;
+    font-size: 1.1vw;
+}
+
+.tab-menu li{
+    display: inline-block;
+    color: #111
+}
+
+.tab-menu li+li {
+    position: relative;
+    margin-left: 1.5em;
+}
+
+.tab-menu a {
+    display: block;
+    border-bottom: .15em solid transparent;
+    font-size: 1.16em;
+    color: #111
+}
+.tab-menu .active a {
+    border-color: #000;
+    font-weight: 700;
+}
+
+
+
+.gall .screen {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+    width: 40%;
+}
+
+.gall img{
+    display: block;
+    width: 100%;
+}
+
+.gall .tmb {
+    position: relative;
+}
+
+.gall .inner {
+    display: block;
+    position: relative;
+}
+
+.gall .screen-pc {
+    left: 10%;
+    width: 80%;
+}
+
+.screen-pc>*:not(i):first-child {
+    border-radius: 4.5% / 8%;
+}
+.gall .screen img, .gall .screen video {
+    border: 3px solid #fff;
+}
+
+.gall .now .cnt {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.gall .cnt {
+    position: absolute;
+    padding: 2em 0;
+    white-space: nowrap;
+}
+
+.gall .cate {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.gall h4 {
+    font-size: 1.6vw;
+}
+
+.gall .screen img+img {
+    border-radius: 15px;
+}
+
+.screen-pc>*+*:not(i) {
+    position: absolute;
+    top: 33.333333%;
+    left: 85%;
+    width: 22%;
+}
+
+.gall>li:nth-of-type(4n-3) .inner {
+    margin: 0 0 0 20%;
+}
+
+.gall .now {
+    transform: translate(0,-60px);
+    opacity: 1;
+    filter: none;
+}
+.gall .inner {
+    display: block;
+    position: relative;
+    transition: all 1s;
+}

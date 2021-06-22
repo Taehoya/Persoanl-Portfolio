@@ -18,8 +18,9 @@
     font-size: 2.3vw;
     line-height: 1;
     transition-duration: 1s;
+    text-decoration: none;
+    color: rgba(0,0,0,.08);
 }
-
 
 .header>.inner>.logo>a:hover{
     color: #111111;
@@ -38,7 +39,7 @@
     position: fixed;
     top: 160px;
     left: 2vw;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.2vw;
     color: rgba(0,0,0,.25);
     display: flex;
@@ -50,13 +51,14 @@
 }
 
 .header .menu-list  .home-menu-item a{
-    font-size: 1.7vw;
+    font-size: 1.75vw;
     display: inline-block;
     position: relative;
     margin-bottom: .4em;
     color: rgba(0,0,0,.25);
     animation: gnb 1s both;
     transition-duration: 1s;
+    text-decoration: none;
 }
 
 .header .menu-list  .home-menu-item a:hover{

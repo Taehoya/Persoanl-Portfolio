@@ -1,10 +1,22 @@
 /* Universe*/
+
+body {
+    font-family: 'Montserrat','Noto Sans KR','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo',sans-serif;
+    letter-spacing: -.025em;
+    word-break: keep-all;
+    word-wrap: break-word;
+    color: #000;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
 .body__container{
-    font-family: 'Noto Sans', sans-serif;
-    font-size : 16px;
+    font-size : 20px;
     font-weight: 400;
     position: relative;
-    /*color : #d96565;*/
     background-color: #fafafa;
 }/*body_container*/
 
@@ -31,30 +43,13 @@
     position: fixed;
 }
 
-/*section*/
-.section{
-    position : relative;
-    padding-top: 20px;
-}
 
 .inner{
     max-width: 1200px;
     margin : 0 auto;
-    /*background: #bf132b;*/
     position: relative;
 }
 
-a:link{
-    text-decoration: none;
-    /*need to decide on default font color*/
-    color:whitesmoke;
-}
-
-a:visited{
-    text-decoration: none;
-    /*need to decide on default font color*/
-    color:whitesmoke;
-}
 
 .h1 .h2 .h3 .h4 .h5 .h6 h1 h2 h3 h4 h5 h6{
     font-weight: 700;

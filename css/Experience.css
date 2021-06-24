@@ -1,0 +1,74 @@
+
+
+.container{
+    position: relative;
+    width: 66.666666%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gall {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40vw;
+    padding: 0 0 5em;
+}
+
+.gall .screen {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+    width: 40%;
+    transform: translate(0,-50%);
+}
+
+
+.gall>li {
+    flex: 0 0 50%;
+    max-width: 30%;
+}
+
+
+
+.gall .screen {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 10%;
+    width: 80%;
+}
+
+
+
+
+
+
+
+.gall img{
+    display: block;
+    width: 100%;
+}
+
+.gall .tmb {
+    position: relative;
+}
+
+.gall .inner {
+    display: block;
+    position: relative;
+}
+
+
+.gall h4 {
+    font-size: 1.6vw;
+}
+
+.gall>li .inner {
+    margin: 0 3%;
+}
+
+#project_1 .tmb>img {
+    border-radius: 50%;
+}

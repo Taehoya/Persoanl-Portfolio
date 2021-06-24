@@ -59,3 +59,33 @@ a {
 /********************************************/
 
 
+
+.sub-head h2{
+    margin-bottom: .5em;
+    font-size: 15vw;
+    line-height: .4;
+    letter-spacing: -.1em;
+    text-align: right;
+    color: #f6f6f6;
+    animation: ink 1.5s both;
+    font-weight: 700;
+}
+
+.sub-head h3{
+    width: 66.666666%;
+    margin: 1em auto 0;
+    font-size: 3.5vw;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+
+.sub-head{
+    margin: 0 0 4vw;
+}
+
+.sub-head h3 span{
+    display: inline-block;
+    padding-right: .1em;
+}
+
+

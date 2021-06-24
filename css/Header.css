@@ -61,6 +61,11 @@
     text-decoration: none;
 }
 
+.header .menu-list  .home-menu-item .active{
+    color: #111;
+}
+
+
 .header .menu-list  .home-menu-item a:hover{
     color: #111;
 }

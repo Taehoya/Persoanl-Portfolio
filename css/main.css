@@ -1,12 +1,39 @@
 /* Universe*/
 
+@font-face {
+    font-family: 'bh';
+    src: url('../font/BMHANNAProOTF.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bh1';
+    src: url('../font/BMEULJIRO.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bh2';
+    src: url('../font/BMJUA_otf.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bh3';
+    src: url('../font/BMHANNAProOTF.otf') format('truetype');
+}
+
 body {
     font-family: 'Montserrat','Noto Sans KR','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo',sans-serif;
     letter-spacing: -.025em;
     word-break: keep-all;
     word-wrap: break-word;
     color: #000;
+    /*font-family: bh2;*/
 }
+
+
+body{
+    background-image: repeating-linear-gradient(to right,transparent,transparent calc(16.666666% - 1px),#eee calc(16.666666% - 1px),#eee 16.666666%);
+}
+
 
 a {
     text-decoration: none !important;
@@ -77,6 +104,7 @@ a {
     font-size: 3.5vw;
     font-weight: 700;
     letter-spacing: -.05em;
+    /*font-family: bh2;*/
 }
 
 .sub-head{

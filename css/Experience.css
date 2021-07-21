@@ -9,25 +9,15 @@
 }
 
 .gall {
-    display: flex;
-    flex-wrap: wrap;
     min-height: 40vw;
     padding: 0 0 5em;
 }
 
-.gall .screen {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    z-index: 1;
-    width: 40%;
-    transform: translate(0,-50%);
-}
-
-
 .gall>li {
-    flex: 0 0 50%;
-    max-width: 30%;
+    /*flex: 0 0 50%;*/
+    /*max-width: 30%;*/
+    display: flex;
+    margin-bottom: 8.5vh;
 }
 
 
@@ -38,12 +28,13 @@
     z-index: 1;
     left: 10%;
     width: 80%;
+    transform: translate(0,-50%);
 }
 
-
-
-
-
+#Experience_2 > .gall > .screen{
+    width: 100%;
+    left: 0;
+}
 
 
 .gall img{
@@ -53,6 +44,7 @@
 
 .gall .tmb {
     position: relative;
+    width : 12vw;
 }
 
 .gall .inner {
@@ -69,7 +61,31 @@
     margin: 0 3%;
 }
 
-#project_1 .tmb>img {
+#Experience_1 .tmb>img {
     border-radius: 50%;
 }
-No newline at end of file
+
+.experience-description{
+    padding-top : 20px;
+    /*font-family: bh2;*/
+}
+
+.experience-date{
+    font-size : 1.2vw;
+    margin-bottom: 15px;
+}
+
+.experience-role{
+    font-size: 1.2vw;
+    margin-top : 15px;
+    font-weight: 800;
+    margin-bottom: 2.5vh;
+}
+
+.experience-summary{
+    font-size : 1.1vw;
+}
+
+.experience-place{
+    font-family: bh3;
+}

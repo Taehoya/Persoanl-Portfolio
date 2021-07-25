@@ -31,7 +31,10 @@ body {
 
 
 body{
-    background-image: repeating-linear-gradient(to right,transparent,transparent calc(16.666666% - 1px),#eee calc(16.666666% - 1px),#eee 16.666666%);
+    /*background-image: repeating-linear-gradient(to right,transparent,transparent calc(16.666666% - 1px),#eee calc(16.666666% - 1px),#eee 16.666666%);*/
+    background-image: linear-gradient(
+            180deg
+            ,#2f6ed3 5%,#5095e4 20%,#5095e4 60%,#2f6ed3 95%);
 }
 
 

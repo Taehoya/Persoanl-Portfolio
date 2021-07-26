@@ -1,23 +1,12 @@
-/* section 크리 브라우저 전체크기로 잡기 */
-section{
-
+.home-section{
+    height: 100vh;;
+    width: 100%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    transition: all 0.3s ease;
-}
-
-
-
+/*home-section main outer box*/
 .home{
     height: 68vh;
     width: 66.6666%;
-    /*background: rgba(255, 255, 255, 0.1);*/
-    /*box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);*/
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
@@ -27,62 +16,35 @@ section{
     position: relative;
     display: flex;
     background-color: #fff;
-    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
 }
 
+/**************************/
 
-.section{
-    height: 100vh;;
-    width: 100%;
-    background-color: #fff;
-    /*background-image: linear-gradient( 135deg, #ff9a9e  10%, #F6416C 100%);*/
+/*home-section text part*/
+.home-text{
+    width: 65%;
+    position: relative;
 }
 
-::selection{
-    color: #f2f2f2;
-    background: #f86d8d;
-}
-.home::before,
-.home::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+.home-text-header{
+    margin-top: 10vh;
+    margin-left: 5vw;
 }
 
-
-/*.home:before{*/
-/*    clip-path: circle(30% at left 20%);*/
-/*    opacity: 0.4;*/
-/*    background-image: linear-gradient( 135deg, #F6416C 10%, #ff9a9e 100%);*/
-/*}*/
-/*.home::after{*/
-/*    opacity: 0.4;*/
-/*    clip-path: circle(25% at right 80%);*/
-/*    background-image: linear-gradient( 135deg, #F6416C 10%, #ff9a9e 100%);*/
-/*}*/
-
-
-
-.home .navbar{
-    margin: auto;
-    width: 100%;
-    padding: 35px 50px;
-    border-radius: 25px;
+.home-text h2{
+    font-size: 3.8vw;
+    font-weight: 700;
 }
 
-.buttons{
-    /*margin-left: 80px;*/
-    /*margin-top: 150px;*/
+.home-text-list-wrap{
     position: absolute;
     bottom: 14vh;
     left: 5vw;
 }
 
 
-.buttons .personality{
+.home-text-list-wrap .home-text-list-element{
     outline: none;
     /*font-size: 26px;*/
     font-size: 1vw;
@@ -95,40 +57,31 @@ section{
     transition: all 0.3s ease;
     background-color: #eee;
     color: #000;
-    /*background-image: linear-gradient( 135deg, #ff9a9e  10%, #F6416C 100%);*/
-    /*z-index: 9999;*/
     position: relative;
 }
 
-
-.personality:before {
+.home-text-list-element:before {
     position: absolute;
     top: 0;
     left: -4px;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: url("../img/icon_head.svg");
     content: "";
 }
 
-.buttons .personality:hover{
+.home-text-list-wrap .home-text-list-element:hover{
     transform: scale(0.97);
 }
 
-.buttons > li{
-    display: block;
-}
-.sub-menu{
+.home-text-list-wrap> li > ul{
     display: flex;
 }
 
+/**************************/
 
-.text-section{
-    width: 65%;
-    position: relative;
-}
-
-.img-section{
+/*home-section img part*/
+.home-img{
     width: 35%;
     transform: translateX(60px);
     position: absolute;
@@ -136,27 +89,10 @@ section{
     bottom: 0;
 }
 
-.img-section img{
+.home-img img{
     width: 100%;
 }
 
-.text-section-small-box{
-    margin-top: 10vh;
-    margin-left: 5vw;
-}
+/**************************/
 
-.text-section h2{
-    /*font-size: 6.8em;*/
-    font-size: 3.8vw;
-    font-weight: 700;
-}
 
-.sub-menu > li {
-    display: flex;
-}
-
-.personality{
-    color: #f2f2f2;
-    border-radius: 12px;
-    background-color: #f2f2f2;
-}

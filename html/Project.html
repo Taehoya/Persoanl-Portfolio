@@ -15,6 +15,8 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class = "body_container">
@@ -22,11 +24,25 @@
   <header class="header">
     <div class="inner">
       <h1 class="logo">
-        <a href= "../index.html">sketchbook</a>
+        <a href= "../index.html">Taeho Choi</a>
         <a href = "../index.html" id = "subLogo">태호의 스케치북</a>
       </h1>
       <!--End of logo-->
 
+      <div class = "mobile-header">
+
+        <div class = "mobile-logo">
+          <img src = "../img/TaehoICON.png" alt = "mobile-icon"/>
+        </div>
+
+        <li id="click-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+
+      </div>
       <!--Menu list-->
       <ul class="menu-list">
         <li class = "home-menu-item">
@@ -35,22 +51,22 @@
           </a>
         </li>
         <li class = "home-menu-item">
-          <a href="About.html">
+          <a href="../html/About.html">
             <strong>A</strong>bout
           </a>
         </li>
         <li class = "home-menu-item">
-          <a href="Project.html" class ="active">
+          <a href="../html/Project.html">
             <strong>P</strong>roject
           </a>
         </li>
         <li class = "home-menu-item">
-          <a href="Experience.html">
+          <a href="../html/Experience.html">
             <strong>E</strong>xperience
           </a>
         </li>
         <li class = "home-menu-item">
-          <a href="Connect.html">
+          <a href="../html/Connect.html">
             <strong>C</strong>onnect
           </a>
         </li>
@@ -63,81 +79,69 @@
     <div class = "sub-head">
       <h2>Project</h2>
       <h3>
-        <span>These are my project</span>
-        <br><span>프로젝트 색션입니다</span>
+        <p class = "description">These are my project </p>
+        <p class = "sub-description">You can check my github repo <a href="https://github.com/Taehoya">@Taehoya</a> to see more projects</p>
       </h3>
     </div>
-    <ul class = "tab-menu container">
-      <li class ="active">
-        <a href = "#" data-toggle = "category" data-target = "#">ALL</a>
-      </li>
-      <li>
-        <a href = "#" data-toggle = "category" data-target = "#">In Progress</a>
-      </li>
-      <li>
-        <a href = "#" data-toggle = "category" data-target = "#">Completed</a>
-      </li>
-    </ul>
-    <ul id="book" class="container gall">
-      <li id="project_1">
-        <a class="inner now" href="https://github.com/Taehoya" data-tag="design,development" data-toggle="book">
-          <i class="gall-bg" style="background:#d92621"></i>
-          <div class="tmb">
-            <img src="../img/thumbnail2.png" alt=""/>
-            <div class="screen screen-pc">
-              <img class="img-fluid border-black" src="../img/screen.jpeg" alt=""/>
-              <img class="img-fluid border-black" src="../img/screen-m.jpeg" alt=""/>
+    <ul class="container">
+      <li class="project_1">
+        <a href="https://github.com/Taehoya/Persoanl-Portfolio">
+          <img src="../img/TaehoIMG2.jpg" alt="Personal Portfolio"/>
+          <div class="blackHover">
+            <div class="projectInfo">
+              <h2>Personal Website</h2>
+              <div class = "tech-stack">
+                <i class="fab fa-html5 red"></i>
+                <i class="fab fa-css3 blue"></i>
+                <i class="fab fa-js-square yellow"></i>
+              </div>
+              <div>
+                <button>
+                  <i class="fab fa-github black"><span> GitHub</span></i>
+                </button>
+                <button>
+                  <i class="fab fa-html5 black"><span> Demo</span></i>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="cnt">
-            <b class="cate">Design / Development</b>
-            <h4>
-              Online Portfolio<br/>
-            </h4>
-          </div>
-        </a>
-      </li>
-      <li id="project_2">
-        <a class="inner" href="https://github.com/Taehoya" data-tag="design,development" data-toggle="book">
-          <i class="gall-bg" style="background:#d92621"></i>
-          <div class="tmb">
-            <img src="../img/thumbnail3.png" alt=""/>
-            <div class="screen screen-pc">
-              <img class="img-fluid border-black" src="../img/screen.jpeg" alt=""/>
-              <img class="img-fluid border-black" src="../img/screen-m.jpeg" alt=""/>
-            </div>
-          </div>
-          <div class="cnt">
-            <b class="cate">Design / Development</b>
-            <h4>
-              Online Portfolio<br/>
-            </h4>
-          </div>
-        </a>
-      </li>
-      <li id="project_3">
-        <a class="inner" href="https://github.com/Taehoya" data-tag="design,development" data-toggle="book">
-          <i class="gall-bg" style="background:#d92621"></i>
-          <div class="tmb">
-            <img src="../img/thumbnail1.png" alt=""/>
-            <div class="screen screen-pc">
-              <img class="img-fluid border-black" src="../img/screen.jpeg" alt=""/>
-              <img class="img-fluid border-black" src="../img/screen-m.jpeg" alt=""/>
-            </div>
-          </div>
-          <div class="cnt">
-            <b class="cate">Design / Development</b>
-            <h4>
-              Online Portfolio<br/>
-            </h4>
           </div>
         </a>
       </li>
 
+      <li class="project_2">
+        <a href="https://github.com/Taehoya/Persoanl-Portfolio">
+          <img src="../img/to-do-list.jpg" alt="TodolistProject"/>
+          <div class="blackHover">
+            <div class="projectInfo">
+              <h2>To do list</h2>
+              <div class = "tech-stack">
+                <i class="fab fa-vuejs red"></i>
+                <i class="fab fa-css3 blue"></i>
+                <i class="fab fa-js-square yellow"></i>
+              </div>
+              <h4>개인 포트폴리오</h4>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="project_3">
+        <a href="https://github.com/Taehoya/Persoanl-Portfolio">
+          <img src="../img/TaehoProject.png" alt="umplannerProject"/>
+          <div class="blackHover">
+            <div class="projectInfo">
+              <h2>UM Planner</h2>
+              <div class = "tech-stack">
+                <i class="fab fa-java red"></i>
+                <i class="fab fa-android green"></i>
+              </div>
+              <h4>개인 포트폴리오</h4>
+            </div>
+          </div>
+        </a>
+      </li>
     </ul>
   </section>
-
-
 </div>
 
 <!--Footer-->
@@ -153,6 +157,6 @@
   </div>
 </footer>
 <!--End of Footer-->
-
+<script src="../js/index.js"></script>
 </body>
 </html>

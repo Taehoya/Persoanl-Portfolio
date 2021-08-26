@@ -103,8 +103,8 @@ a {
 }
 
 .sub-head h3{
-    width: 66.666666%;
-    margin: 1em auto 0;
+    /*width: 66.666666%;*/
+    /*margin: 0 18vw;*/
     font-size: 3.5vw;
     font-weight: 700;
     letter-spacing: -.05em;
@@ -112,7 +112,7 @@ a {
 }
 
 .sub-head{
-    margin: 0 0 12vw 0;
+    margin: 0 0 4.5vw 0;
 }
 
 .sub-head h3 span{
@@ -120,4 +120,35 @@ a {
     padding-right: .1em;
 }
 
+.container{
+    position: relative;
+    width: 66.666666%;
+    max-width: none;
+    margin : 0 20vw;
+}
 
+section{
+    padding-bottom: 100px;
+}
+
+
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.yellow{
+    color : #edd12d;
+}
+
+.black{
+    color : #000;
+}
+
+.green{
+    color : limegreen;
+}

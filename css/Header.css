@@ -14,9 +14,9 @@
 
     .header .inner .logo a{
         position: fixed;
-        top: 40px;
+        top: 4vh;
         left: 2vw;
-        font-size: 2.3vw;
+        font-size: 2.7vw;
         line-height: 1;
         transition-duration: 1s;
         text-decoration: none;
@@ -29,19 +29,20 @@
 
     .header>.inner>.logo>#subLogo{
         position: fixed;
-        top: 85px;
+        top: 10vh;
         left: 2.1vw;
         font-size: 0.8vw;
         line-height: 1;
         color: #111;
     }
 
+
     .header .menu-list{
         position: fixed;
-        top: 160px;
+        top: 22%;
         left: 2vw;
         font-weight: 800;
-        font-size: 1.2vw;
+        font-size: 1.8vw;
         color: rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
@@ -51,8 +52,8 @@
         width: 100%;
     }
 
-    .header .menu-list  .home-menu-item a{
-        font-size: 1.75vw;
+    .header .menu-list  .home-menu-item{
+        font-size: 2.1vw;
         display: inline-block;
         position: relative;
         margin-bottom: .4em;
@@ -60,6 +61,7 @@
         animation: gnb 1s both;
         transition-duration: 1s;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .header .menu-list  .home-menu-item .active{
@@ -67,7 +69,7 @@
     }
 
 
-    .header .menu-list  .home-menu-item a:hover{
+    .header .menu-list  .home-menu-item:hover{
         color: #111;
     }
 

@@ -1,14 +1,10 @@
 
 
 @media all and (min-width :768px) {
-    .section{
-        height: 100vh;;
-        width: 100%;
-    }
 
     /*home-section main outer box*/
-    .home{
-        height: 68vh;
+    .connect{
+        height: 40vh;
         width: 66.6666%;
         z-index: 12;
         border-radius: 25px;
@@ -22,45 +18,51 @@
         box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
     }
 
-    .home-section > .sub-head{
-        margin: 0 0 4vw 0;
-    }
-
 
     /**************************/
 
     /*home-section text part*/
-    .home-text{
-        width: 65%;
+    .connect-text{
+        width: 100%;
         position: relative;
     }
 
-    .home-text-header{
+    .connect-text-header{
         margin-top: 10vh;
         margin-left: 5vw;
     }
 
-    .home-text h2{
-        font-size: 3.8vw;
+    .connect-text h2{
+        font-size: 2vw;
         font-weight: 700;
     }
 
-    .home-text-list-wrap{
-        position: absolute;
-        bottom: 14vh;
-        left: 5vw;
+    .connect-text-description{
+        font-size: 1.5vw;
+        /* margin-left: 2vw; */
+        margin-top: 2vh;
+        font-weight: 500;
+    }
+
+    .connect-text-list-wrap{
+        /*position: absolute;*/
+        /*bottom: 14vh;*/
+        /*left: 5vw;*/
+        margin-left: 5vw;
     }
 
 
-    .home-text-list-wrap .home-text-list-element{
+    .connect-text-list-wrap .connect-text-list-element{
         outline: none;
         /*font-size: 26px;*/
         font-size: 0.8vw;
-        font-weight: 500;
+        font-weight: 900;
         border-radius: 15px;
         padding: 10px 22px;
         border: none;
-        margin: 0.5vw 1vh;
+        /*margin: 0.5vw 1vh;*/
+        margin-right: 1vw;
+        margin-top: 3vh;
         cursor: pointer;
         transition: all 0.3s ease;
         background-color: #eee;
@@ -68,21 +70,20 @@
         position: relative;
     }
 
-    .home-text-list-element:before {
+    .connect-text-list-element:before {
         position: absolute;
         top: 0;
         left: -4px;
         width: 20px;
         height: 20px;
-        background: url("../img/icon_head.svg");
         content: "";
     }
 
-    .home-text-list-wrap .home-text-list-element:hover{
+    .connect-text-list-wrap .connect-text-list-element:hover{
         transform: scale(0.97);
     }
 
-    .home-text-list-wrap> li > ul{
+    .connect-text-list-wrap> li > ul{
         display: flex;
     }
 
@@ -212,7 +213,6 @@
     .home-img{
         display: none;
     }
-
 
     /**************************/
 }

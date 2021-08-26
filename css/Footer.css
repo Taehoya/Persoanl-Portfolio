@@ -37,15 +37,15 @@
         width: 45px;
         height: 40px;
         padding-top: 6px;
-        margin-right: 12px;
+        margin-right: 1vw;
         text-align: center;
-        font-size: 28px;
+        font-size: 1.5vw;
         color: #111;
         transition-duration: 1s;
     }
 
     #social-media a:hover{
-        color: royalblue;
+        color: #787878;
     }
 }
 
@@ -98,7 +98,7 @@
     }
 
     #social-media a:hover{
-        color: royalblue;
+        color: #787878;
     }
 
 

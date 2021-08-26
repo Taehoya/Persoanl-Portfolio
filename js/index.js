@@ -41,5 +41,44 @@ $(document).ready(function(){
 
 
 
+    $("#home-button").on('click', function(event) {
+        let target = $('.home-section');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+
+    $("#project-button").on('click', function(event) {
+        let target = $('.project-section');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+
+    $("#experience-button").on('click', function(event) {
+        let target = $('.experience-section');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+
+    $("#connect-button").on('click', function(event) {
+        let target = $('.connect-section');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
 });
 

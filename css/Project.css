@@ -1,7 +1,5 @@
 
 @media all and (min-width :768px) {
-
-
     .sub-description {
         font-size: 1.8vw;
         letter-spacing: 0.5px;
@@ -10,9 +8,9 @@
 
     .project-section .container {
         position: relative;
-        overflow: hidden;
+        /*overflow: hidden;*/
         min-height: 23vw;
-        height: 68vh;
+        /*height: 68vh;*/
         width: 66.6666%;
         z-index: 12;
         border-radius: 25px;
@@ -113,6 +111,150 @@
     .project-button-list > button {
         outline: none;
         font-size: 0.8vw;
+        font-weight: 900;
+        border-radius: 15px;
+        padding: 10px 22px;
+        border: none;
+        margin: 0.5vw 1vh;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #eee;
+        color: #000;
+        position: relative;
+    }
+
+    .project-button-list > button:hover {
+        background-color: #7b7b7b;
+        color: #eee;
+    }
+
+    .project-button-list > button:hover {
+        color: #eee;
+    }
+
+    .button > a > i {
+        font-weight: 900;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .sub-description {
+        font-size: 4vw;
+        letter-spacing: 0.5px;
+        /*margin-left: 8px;*/
+    }
+
+    .section{
+        margin-bottom: 5vh;
+    }
+
+    .project-section .container {
+        position: relative;
+        /*overflow: hidden;*/
+        /*min-height: 23vw;*/
+        /*height: 68vh;*/
+        width: 80vw;
+        z-index: 12;
+        /*border-radius: 25px;*/
+        margin: 0 auto;
+    }
+
+    .project-section .project-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .project-section ul li {
+        width: 80vw;
+        height: 80vw;
+        float: left;
+        transition: all 0.5s;
+        background: white;
+        border-radius: 25px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        overflow: hidden;
+    }
+
+    .project-section ul li:last-child {
+        margin-right: 0;
+    }
+
+
+    .project-section ul li:last-child {
+        margin-right: 0;
+    }
+
+    .project-section ul li {
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    .project-section ul li img {
+        height: 80vw;
+        transition: all 0.5s;
+        object-position: 50% 50%;
+    }
+
+    .project-section ul li.clickOpacity {
+        opacity: 0.3;
+    }
+
+    .project-section ul li.imgScale img {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .project-section ul li .blackHover {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+        text-align: center;
+    }
+
+    .project-section ul li:hover .blackHover {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .project-section ul li .blackHover .projectInfo {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+    }
+
+    .project-section ul li .blackHover h2 {
+        font-family: europa, sans-serif;
+        font-weight: 700;
+        font-size: 8vw;
+    }
+
+    .project-section ul li .blackHover .tech-stack {
+        font-weight: 400;
+        font-size: 7vw;
+        margin: 30px 0;
+    }
+
+    .project-section ul li .blackHover h4 {
+        font-weight: 500;
+        font-size: 2vw;
+    }
+
+    .project-button-list > button {
+        outline: none;
+        font-size: 4vw;
         font-weight: 900;
         border-radius: 15px;
         padding: 10px 22px;

@@ -2,6 +2,11 @@ $(document).ready(function(){
     let clickController =  true;
     function hamControl(){
         if(clickController){
+            $('.body_container').css({
+                height : "100vh",
+                overflow : 'hidden'
+            });
+
             $(".menu-list").animate({
                 width : "100vw",
             });
@@ -10,6 +15,12 @@ $(document).ready(function(){
             $(".menu-list").animate({
                 width: "0px"
             });
+
+            $('.body_container').css({
+                height : "auto",
+                overflow : 'none'
+            });
+
         }//else
 
         if(clickController){
@@ -21,6 +32,9 @@ $(document).ready(function(){
                 display : "block"
             });
 
+
+
+
         }else{
             $(".footer").animate({
                 display : "none"
@@ -29,6 +43,8 @@ $(document).ready(function(){
             $(".footer").css({
                 display : "none"
             });
+
+
         }//else
 
         clickController = !clickController;
@@ -47,6 +63,8 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+            // hamControl();
+            $("#click-btn").removeClass('active');
             return false;
         }
     });
@@ -57,6 +75,8 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+            // hamControl();
+            $("#click-btn").removeClass('active');
             return false;
         }
     });
@@ -67,6 +87,8 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+            // hamControl();
+            $("#click-btn").removeClass('active');
             return false;
         }
     });
@@ -77,8 +99,22 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+            // hamControl();
+            $("#click-btn").removeClass('active');
             return false;
         }
     });
+
+    let $header = $('.header');
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+           $header.addClass('sticky');
+        }else{
+            $header.removeClass('sticky');
+        }
+    });
+
+
+
 });
 

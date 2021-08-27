@@ -96,6 +96,7 @@
 
     .header{
         position: relative;
+        /*transition: 0.3s;*/
     }
 
     .logo{
@@ -156,7 +157,7 @@
         height: 100vh;
         background-color: #fff;
         overflow: hidden;
-        margin-top: 30px;
+        margin-top: 6.6vw;
         z-index: 9999;
         position: absolute;
         top: 0;
@@ -165,19 +166,16 @@
 
     .home-menu-item{
         width: 100%;
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        margin-left: 40px;
-        font-size: 25px;
+        margin-left: 10vw;
+        font-size: 7.5vw;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 10vw;
         font-weight: 700;
+        cursor: pointer;
     }
 
     .mobile-logo{
-        width: 10%;
-        float: left;
+        font-size: 5vw;
     }
 
     .mobile-logo img{
@@ -185,11 +183,37 @@
     }
 
     .mobile-header{
-        width: 75%;
+        width: 80vw;
         margin: 1.5vh auto;
-        height: 20px;
-        /*background-color: yellow;*/
+        height: 6.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
     }
+
+
+    .header.sticky{
+        position: fixed;
+        width: 100vw;
+        overflow: hidden;
+        /*margin: 0 auto;*/
+        /*height: 6.5vw;*/
+        display: flex;
+        /*align-items: center;*/
+        /*justify-content: space-between;*/
+        z-index: 9999;
+        /*left: 9vw;*/
+        top : 0;
+        /*overflow: hidden;*/
+        /*padding-top: 20px;*/
+        /*padding-bottom: 20px;*/
+        background-color: #fff;
+        /*border-bottom: 1px solid black;*/
+
+    }
+
+
 
 }
 

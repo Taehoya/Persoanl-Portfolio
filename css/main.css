@@ -49,7 +49,12 @@ a {
     font-weight: 400;
     position: relative;
     background-color: #fafafa;
+    scroll-snap-type: y mandatory;
 }/*body_container*/
+
+.section{
+    scroll-snap-align: center;
+}
 
 .body__container a{
     text-decoration: none;
@@ -103,12 +108,9 @@ a {
 }
 
 .sub-head h3{
-    /*width: 66.666666%;*/
-    /*margin: 0 18vw;*/
-    font-size: 3.5vw;
+    font-size: 10vw;
     font-weight: 700;
     letter-spacing: -.05em;
-    /*font-family: bh2;*/
 }
 
 .sub-head{
@@ -125,10 +127,6 @@ a {
     width: 66.666666%;
     max-width: none;
     margin : 0 20vw;
-}
-
-section{
-    padding-bottom: 100px;
 }
 
 
@@ -151,4 +149,15 @@ section{
 
 .green{
     color : limegreen;
+}
+
+@media all and (min-width :768px) {
+    section{
+        padding-bottom: 300px;
+    }
+
+    .sub-head h3{
+        font-size: 3.5vw;
+    }
+
 }

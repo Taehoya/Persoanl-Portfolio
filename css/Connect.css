@@ -108,71 +108,57 @@
     /**************************/
 }
 
-@media all and (max-width: 787px) {
-    .home-section{
-        height: 100vh;
+@media all and (max-width: 767px) {
+    .connect-section{
         width: 100%;
     }
 
-    .sub-head{
-        display: none;
-    }
 
     /*home-section main outer box*/
-    .home{
-        width: 80%;
-        padding: 10px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(5px);
+    .connect{
+        width: 80vw;
         z-index: 12;
-        border-radius: 25px;
         margin: 0 auto;
         position: relative;
         display: flex;
         background-color: #fff;
-        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
     }
 
     /**************************/
 
     /*home-section text part*/
-    .home-text{
+    .connect-text{
         width: 100%;
         position: relative;
     }
 
-    .home-text-header{
+    .connect-text-header{
         margin-top: 6vh;
     }
 
-    .home-text h2{
-        font-size: 7.2vw;
+    .connect-text h2{
+        font-size: 9vw;
         font-weight: 700;
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
     }
 
-    .home-text-list-wrap{
+    .connect-text-list-wrap{
         /*position: absolute;*/
         /*bottom: 10vh;*/
         margin : 10px auto;
     }
 
-    .home-text-list-wrap>li{
-        display: flex;
-        justify-content: center;
-    }
-
-    .home-text-list-wrap .home-text-list-element{
+    .connect-text-list-wrap .connect-text-list-element{
         outline: none;
-        font-size: 0.2vw;
+        font-size: 4vw;
         font-weight: 500;
         border-radius: 15px;
-        padding: 5px 15px;
+        padding: 13px 15px;
         border: none;
-        margin: 0.5vw;
+        margin-right: 3vw;
+        margin-top: 1.5vw;
         cursor: pointer;
         transition: all 0.3s ease;
         background-color: #eee;
@@ -180,41 +166,18 @@
         position: relative;
     }
 
-    .home-text-list-element:before {
-        position: absolute;
-        top: 0;
-        left: -3px;
-        width: 10px;
-        height: 10px;
-        background: url("../img/icon_head.svg");
-        content: "";
+    .connect-text-description{
+        font-size: 4vw;
     }
 
-    .home-text-list-wrap .home-text-list-element:hover{
+
+    .connect-text-list-wrap .home-text-list-element:hover{
         transform: scale(0.97);
     }
 
-    .home-text-list-wrap> li > ul{
+    .connect-text-list-wrap> li > ul{
         display: flex;
     }
-
-    .mobile-img{
-        width: 40%;
-        margin: 0 auto;
-    }
-
-    .mobile-img img{
-        width: 100%;
-    }
-
-    /**************************/
-
-    /*home-section img part*/
-    .home-img{
-        display: none;
-    }
-
-    /**************************/
 }
 
 

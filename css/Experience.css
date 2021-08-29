@@ -24,8 +24,7 @@
     }
 
     .experience-description{
-        padding-top : 20px;
-        margin-left: 3vw;
+        margin-left: 30px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -38,7 +37,7 @@
     .experience-role{
         font-size: 1.2vw;
         font-weight: 800;
-        margin : 15px 0;
+        margin : 12px 0;
     }
 
     .experience-summary{

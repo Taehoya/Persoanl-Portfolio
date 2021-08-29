@@ -168,7 +168,6 @@
     }
 
     .home-menu-item{
-        /*width: 100px;*/
         margin-left: 10vw;
         font-size: 7.5vw;
         margin-bottom: 20px;
@@ -205,8 +204,6 @@
         z-index: 9999;
         top : 0;
         background-color: #fff;
-        transition-duration: 2s;
-
     }
 
     .overlay{
@@ -262,8 +259,6 @@
     .overlay.visible nav ul li:nth-child(4){
         animation-delay: 0.32s;
     }
-
-
 
 }
 

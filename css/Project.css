@@ -6,17 +6,6 @@
         margin-left: 8px;
     }
 
-    .project-section .container {
-        position: relative;
-        /*overflow: hidden;*/
-        min-height: 23vw;
-        /*height: 68vh;*/
-        width: 66.6666%;
-        z-index: 12;
-        border-radius: 25px;
-        margin: 0 20vw;
-    }
-
     .project-section .project-container {
         display: flex;
         justify-content: space-between;
@@ -55,7 +44,6 @@
     .project-section ul li img {
         height: 19vw;
         transition: all 0.5s;
-        object-position: 50% 50%;
     }
 
     .project-section ul li.clickOpacity {
@@ -144,9 +132,6 @@
         /*margin-left: 8px;*/
     }
 
-    .section{
-        margin-bottom: 5vh;
-    }
 
     .project-section .container {
         position: relative;

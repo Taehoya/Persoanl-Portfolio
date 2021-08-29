@@ -1,55 +1,9 @@
 $(document).ready(function(){
-    // let clickController =  true;
-    // function hamControl(){
-    //     if(clickController){
-    //         $(".menu-list").animate({
-    //             width : "100vw",
-    //         });
-    //
-    //     }else{
-    //         $(".menu-list").animate({
-    //             width: "0px"
-    //         });
-    //
-    //
-    //     }//else
-    //
-    //     if(clickController){
-    //         $(".footer").animate({
-    //             display : "block"
-    //         });
-    //
-    //         $(".footer").css({
-    //             display : "block"
-    //         });
-    //
-    //
-    //
-    //
-    //     }else{
-    //         $(".footer").animate({
-    //             display : "none"
-    //         });
-    //
-    //         $(".footer").css({
-    //             display : "none"
-    //         });
-    //
-    //
-    //     }//else
-    //
-    //     clickController = !clickController;
-    // }
-
-
-
     $("#click-btn").on('click',function(event){
         event.preventDefault();
         $(this).toggleClass('active');
         $(".overlay").toggleClass('visible');
     });
-
-
 
     $("#home-button").on('click', function(event) {
         let target = $('.home-section');
@@ -99,8 +53,6 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
-
-
             if(window.innerWidth <= 767 ){
                 $("#click-btn").toggleClass('active');
                 $(".overlay").toggleClass('visible');
@@ -117,8 +69,5 @@ $(document).ready(function(){
             $header.removeClass('sticky');
         }
     });
-
-
-
 });
 

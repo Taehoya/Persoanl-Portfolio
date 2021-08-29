@@ -69,5 +69,14 @@ $(document).ready(function(){
             $header.removeClass('sticky');
         }
     });
+
+    let $menu = $('.home-menu-item');
+    console.log($menu);
+
+    $menu.on('click',(function(event){
+        event.preventDefault();
+        $menu.removeClass('active');
+        $(this).addClass('active')
+    }));
 });
 

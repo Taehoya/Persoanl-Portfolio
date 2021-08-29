@@ -1,58 +1,52 @@
 $(document).ready(function(){
-    let clickController =  true;
-    function hamControl(){
-        if(clickController){
-            $('.body_container').css({
-                height : "100vh",
-                overflow : 'hidden'
-            });
-
-            $(".menu-list").animate({
-                width : "100vw",
-            });
-
-        }else{
-            $(".menu-list").animate({
-                width: "0px"
-            });
-
-            $('.body_container').css({
-                height : "auto",
-                overflow : 'none'
-            });
-
-        }//else
-
-        if(clickController){
-            $(".footer").animate({
-                display : "block"
-            });
-
-            $(".footer").css({
-                display : "block"
-            });
-
-
-
-
-        }else{
-            $(".footer").animate({
-                display : "none"
-            });
-
-            $(".footer").css({
-                display : "none"
-            });
+    // let clickController =  true;
+    // function hamControl(){
+    //     if(clickController){
+    //         $(".menu-list").animate({
+    //             width : "100vw",
+    //         });
+    //
+    //     }else{
+    //         $(".menu-list").animate({
+    //             width: "0px"
+    //         });
+    //
+    //
+    //     }//else
+    //
+    //     if(clickController){
+    //         $(".footer").animate({
+    //             display : "block"
+    //         });
+    //
+    //         $(".footer").css({
+    //             display : "block"
+    //         });
+    //
+    //
+    //
+    //
+    //     }else{
+    //         $(".footer").animate({
+    //             display : "none"
+    //         });
+    //
+    //         $(".footer").css({
+    //             display : "none"
+    //         });
+    //
+    //
+    //     }//else
+    //
+    //     clickController = !clickController;
+    // }
 
 
-        }//else
 
-        clickController = !clickController;
-    }
-
-    $("#click-btn").click(function(){
-        $("#click-btn").toggleClass('active');
-        hamControl();
+    $("#click-btn").on('click',function(event){
+        event.preventDefault();
+        $(this).toggleClass('active');
+        $(".overlay").toggleClass('visible');
     });
 
 
@@ -63,8 +57,10 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
-            // hamControl();
-            $("#click-btn").removeClass('active');
+            if(window.innerWidth <= 767 ){
+                $("#click-btn").toggleClass('active');
+                $(".overlay").toggleClass('visible');
+            }
             return false;
         }
     });
@@ -75,8 +71,10 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
-            // hamControl();
-            $("#click-btn").removeClass('active');
+            if(window.innerWidth <= 767 ){
+                $("#click-btn").toggleClass('active');
+                $(".overlay").toggleClass('visible');
+            }
             return false;
         }
     });
@@ -87,8 +85,10 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
-            // hamControl();
-            $("#click-btn").removeClass('active');
+            if(window.innerWidth <= 767 ){
+                $("#click-btn").toggleClass('active');
+                $(".overlay").toggleClass('visible');
+            }
             return false;
         }
     });
@@ -99,8 +99,12 @@ $(document).ready(function(){
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
-            // hamControl();
-            $("#click-btn").removeClass('active');
+
+
+            if(window.innerWidth <= 767 ){
+                $("#click-btn").toggleClass('active');
+                $(".overlay").toggleClass('visible');
+            }
             return false;
         }
     });

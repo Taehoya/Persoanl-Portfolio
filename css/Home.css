@@ -1,11 +1,4 @@
-
-
-@media all and (min-width :768px) {
-    .section{
-        /*height: 100vh;*/
-        width: 100%;
-    }
-
+ @media all and (min-width :768px) {
     /*home-section main outer box*/
     .home{
         height: 68vh;
@@ -21,11 +14,6 @@
         backdrop-filter: blur(5px);
         box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
     }
-
-    .home-section > .sub-head{
-        margin: 0 0 4vw 0;
-    }
-
 
     /**************************/
 
@@ -54,14 +42,12 @@
 
     .home-text-list-wrap .home-text-list-element{
         outline: none;
-        /*font-size: 26px;*/
         font-size: 0.8vw;
         font-weight: 500;
         border-radius: 15px;
         padding: 10px 22px;
         border: none;
         margin: 0.5vw 1vh;
-        cursor: pointer;
         transition: all 0.3s ease;
         background-color: #eee;
         color: #000;
@@ -79,7 +65,7 @@
     }
 
     .home-text-list-wrap .home-text-list-element:hover{
-        transform: scale(0.97);
+        transform: scale(1.1);
     }
 
     .home-text-list-wrap> li > ul{
@@ -110,7 +96,7 @@
 @media all and (max-width: 767px) {
     .home-section{
         width: 80vw;
-        margin: 0 auto 5vh;
+        margin: 13vw auto 5vh;
     }
 
     .sub-head h2{
@@ -143,13 +129,10 @@
         font-size: 10vw;
         font-weight: 700;
         display: flex;
-        /*justify-content: center;*/
         margin-bottom: 10px;
     }
 
     .home-text-list-wrap{
-        /*position: absolute;*/
-        /*bottom: 10vh;*/
         margin : 10px auto;
     }
 

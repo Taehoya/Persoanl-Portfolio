@@ -33,13 +33,12 @@
 
     .experience-date{
         font-size : 1.2vw;
-        /*margin-bottom: 1vh;*/
     }
 
     .experience-role{
         font-size: 1.2vw;
         font-weight: 800;
-        margin : 2vh 0;
+        margin : 15px 0;
     }
 
     .experience-summary{
@@ -50,7 +49,6 @@
 @media all and (max-width :767px){
     .experience-section .container {
         position: relative;
-        /*overflow: hidden;*/
         width: 80vw;
         z-index: 12;
         border-radius: 25px;
@@ -87,7 +85,6 @@
 
     .experience-date{
         font-size : 3.5vw;
-        /*margin-bottom: 1vh;*/
     }
 
     .experience-role{

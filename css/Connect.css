@@ -1,8 +1,6 @@
 
 
 @media all and (min-width :768px) {
-
-    /*home-section main outer box*/
     .connect{
         height: 40vh;
         width: 66.6666%;
@@ -21,7 +19,7 @@
 
     /**************************/
 
-    /*home-section text part*/
+    /*connect-section text part*/
     .connect-text{
         width: 100%;
         position: relative;
@@ -39,28 +37,21 @@
 
     .connect-text-description{
         font-size: 1.5vw;
-        /* margin-left: 2vw; */
         margin-top: 2vh;
         font-weight: 500;
     }
 
     .connect-text-list-wrap{
-        /*position: absolute;*/
-        /*bottom: 14vh;*/
-        /*left: 5vw;*/
         margin-left: 5vw;
     }
 
-
     .connect-text-list-wrap .connect-text-list-element{
         outline: none;
-        /*font-size: 26px;*/
         font-size: 0.8vw;
         font-weight: 900;
         border-radius: 15px;
-        padding: 10px 22px;
+        padding: 15px 22px;
         border: none;
-        /*margin: 0.5vw 1vh;*/
         margin-right: 1vw;
         margin-top: 3vh;
         cursor: pointer;
@@ -80,32 +71,13 @@
     }
 
     .connect-text-list-wrap .connect-text-list-element:hover{
-        transform: scale(0.97);
+        transform: scale(1.1);
     }
 
     .connect-text-list-wrap> li > ul{
         display: flex;
     }
 
-    /**************************/
-
-    /*home-section img part*/
-    .home-img{
-        width: 35%;
-        transform: translateX(60px);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    .home-img img{
-        width: 100%;
-    }
-
-    .mobile-img{
-        display: none;
-    }
-    /**************************/
 }
 
 @media all and (max-width: 767px) {
@@ -114,7 +86,7 @@
     }
 
 
-    /*home-section main outer box*/
+    /*connect-section main outer box*/
     .connect{
         width: 80vw;
         z-index: 12;
@@ -126,7 +98,7 @@
 
     /**************************/
 
-    /*home-section text part*/
+    /*connect-section text part*/
     .connect-text{
         width: 100%;
         position: relative;
@@ -145,8 +117,6 @@
     }
 
     .connect-text-list-wrap{
-        /*position: absolute;*/
-        /*bottom: 10vh;*/
         margin : 10px auto;
     }
 

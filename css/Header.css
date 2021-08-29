@@ -11,10 +11,14 @@
         width : 16.3vw;
     }
 
-    .header .inner .logo a{
+    .header .inner .logo{
         position: fixed;
         top: 4vh;
         left: 2vw;
+        width: 12.5vw;
+    }
+
+    .header .inner .logo a{
         font-size: 2.7vw;
         line-height: 1;
         transition-duration: 1s;
@@ -27,14 +31,10 @@
     }
 
     .header>.inner>.logo>#subLogo{
-        position: fixed;
-        top: 10vh;
-        left: 2.1vw;
         font-size: 0.8vw;
         line-height: 1;
         color: #111;
     }
-
 
     .header .menu-list{
         position: fixed;
@@ -63,7 +63,7 @@
         cursor: pointer;
     }
 
-    .header .menu-list  .home-menu-item .active{
+    .header .menu-list  .home-menu-item.active{
         color: #111;
     }
 

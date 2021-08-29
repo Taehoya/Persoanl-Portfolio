@@ -26,13 +26,9 @@ body {
     word-break: keep-all;
     word-wrap: break-word;
     color: #000;
-    /*font-family: bh2;*/
+    /*font-family: bh1;*/
 }
 
-
-body{
-    background-image: repeating-linear-gradient(to right,transparent,transparent calc(16.666666% - 1px),#eee calc(16.666666% - 1px),#eee 16.666666%);
-}
 
 
 a {
@@ -45,7 +41,9 @@ a {
     font-weight: 400;
     position: relative;
     background-color: #fafafa;
+    scroll-snap-type: y mandatory;
 }/*body_container*/
+
 
 .body__container a{
     text-decoration: none;
@@ -88,7 +86,7 @@ a {
 
 
 .sub-head h2{
-    margin-bottom: .5em;
+    margin-bottom: .2em;
     font-size: 15vw;
     line-height: .4;
     letter-spacing: -.1em;
@@ -99,21 +97,67 @@ a {
 }
 
 .sub-head h3{
-    width: 66.666666%;
-    margin: 1em auto 0;
-    font-size: 3.5vw;
+    font-size: 10vw;
     font-weight: 700;
     letter-spacing: -.05em;
-    /*font-family: bh2;*/
 }
 
 .sub-head{
-    margin: 0 0 4vw;
+    margin: 0 0 4.5vw 0;
 }
 
 .sub-head h3 span{
     display: inline-block;
     padding-right: .1em;
+}
+
+.container{
+    position: relative;
+    width: 66.666666%;
+    max-width: none;
+    margin : 0 20vw;
+}
+
+
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.yellow{
+    color : #edd12d;
+}
+
+.black{
+    color : #000;
+}
+
+.green{
+    color : limegreen;
+}
+
+@media all and (min-width :768px) {
+    section{
+        padding-bottom: 300px;
+    }
+
+    .sub-head h3{
+        font-size: 3.5vw;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .section{
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+
 }
 
 

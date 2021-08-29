@@ -1,13 +1,200 @@
-/* section 크리 브라우저 전체크기로 잡기 */
-section{
+ @media all and (min-width :768px) {
+    /*home-section main outer box*/
+    .home{
+        height: 68vh;
+        width: 66.6666%;
+        z-index: 12;
+        border-radius: 25px;
+        margin: 0 20vw;
+        position: relative;
+        display: flex;
+        background-color: #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    }
 
+    /**************************/
+
+    /*home-section text part*/
+    .home-text{
+        width: 65%;
+        position: relative;
+    }
+
+    .home-text-header{
+        margin-top: 10vh;
+        margin-left: 5vw;
+    }
+
+    .home-text h2{
+        font-size: 3.8vw;
+        font-weight: 700;
+    }
+
+    .home-text-list-wrap{
+        position: absolute;
+        bottom: 14vh;
+        left: 5vw;
+    }
+
+
+    .home-text-list-wrap .home-text-list-element{
+        outline: none;
+        font-size: 0.8vw;
+        font-weight: 500;
+        border-radius: 15px;
+        padding: 10px 22px;
+        border: none;
+        margin: 0.5vw 1vh;
+        transition: all 0.3s ease;
+        background-color: #eee;
+        color: #000;
+        position: relative;
+    }
+
+    .home-text-list-element:before {
+        position: absolute;
+        top: 0;
+        left: -4px;
+        width: 20px;
+        height: 20px;
+        background: url("../img/icon_head.svg");
+        content: "";
+    }
+
+    .home-text-list-wrap .home-text-list-element:hover{
+        transform: scale(1.1);
+    }
+
+    .home-text-list-wrap> li > ul{
+        display: flex;
+    }
+
+    /**************************/
+
+    /*home-section img part*/
+    .home-img{
+        width: 35%;
+        transform: translateX(60px);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .home-img img{
+        width: 100%;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+    /**************************/
 }
 
-.section-wrapper{
-    width : 1200px;
-    height: 600px;
-}
+@media all and (max-width: 767px) {
+    .home-section{
+        width: 80vw;
+        margin: 13vw auto 5vh;
+    }
 
+    .sub-head h2{
+        display: none;
+    }
+
+    /*home-section main outer box*/
+    .home{
+        width: 80vw;
+        z-index: 12;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        background-color: #fff;
+    }
+
+    /**************************/
+
+    /*home-section text part*/
+    .home-text{
+        width: 100%;
+        position: relative;
+    }
+
+    .home-text-header{
+        margin-top: 1.5vh;
+    }
+
+    .home-text h2{
+        font-size: 10vw;
+        font-weight: 700;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .home-text-list-wrap{
+        margin : 10px auto;
+    }
+
+    .home-text-list-wrap>li{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-text-list-wrap .home-text-list-element{
+        outline: none;
+        font-size: 3.4vw;
+        font-weight: 500;
+        border-radius: 15px;
+        padding: 10px 15px;
+        border: none;
+        margin: 0.5vw;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #eee;
+        color: #000;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-text-list-element:before {
+        position: absolute;
+        top: 0;
+        left: -3px;
+        width: 10px;
+        height: 10px;
+        background: url("../img/icon_head.svg");
+        content: "";
+    }
+
+    .home-text-list-wrap .home-text-list-element:hover{
+        transform: scale(0.97);
+    }
+
+    .home-text-list-wrap> li > ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .mobile-img img{
+        width: 100%;
+    }
+
+    /**************************/
+
+    /*home-section img part*/
+    .home-img{
+        display: none;
+    }
+
+    /**************************/
+}
 
 
 

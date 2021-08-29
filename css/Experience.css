@@ -1,91 +1,103 @@
+@media all and (min-width :768px) {
+    .experience-section li {
+        display: flex;
+        margin-bottom: 8.5vh;
+        border-radius: 25px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        overflow: hidden;
+        height: 12vw;
+    }
 
+    .experience-section li:last-child{
+        margin-bottom: 0;
+    }
 
-.container{
-    position: relative;
-    width: 66.666666%;
-    max-width: none;
-    margin: 0 auto;
-    padding: 0 20px;
+    .experience-description h4 {
+        font-size: 1.6vw;
+    }
+
+    .experience-img img {
+        height: 100%;
+    }
+
+    .experience-description{
+        padding-top : 20px;
+        margin-left: 3vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .experience-date{
+        font-size : 1.2vw;
+    }
+
+    .experience-role{
+        font-size: 1.2vw;
+        font-weight: 800;
+        margin : 15px 0;
+    }
+
+    .experience-summary{
+        font-size : 1.1vw;
+    }
 }
 
-.gall {
-    min-height: 40vw;
-    padding: 0 0 5em;
+@media all and (max-width :767px){
+    .experience-section .container {
+        position: relative;
+        width: 80vw;
+        z-index: 12;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+
+    .experience-section li {
+        display: flex;
+        margin-bottom: 5vh;
+        border-radius: 25px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .experience-description h4 {
+        font-size: 4vw
+    }
+
+    .experience-img {
+        width: 100%;
+    }
+
+    .experience-img img {
+        width: 100%;
+    }
+
+    .experience-description{
+        padding: 10px;
+    }
+
+    .experience-date{
+        font-size : 3.5vw;
+    }
+
+    .experience-role{
+        font-size: 1.2vw;
+        font-weight: 800;
+        margin : 2vh 0;
+    }
+
+    .experience-summary{
+        font-size : 4vw;
+        letter-spacing: 1px;
+    }
 }
 
-.gall>li {
-    /*flex: 0 0 50%;*/
-    /*max-width: 30%;*/
-    display: flex;
-    margin-bottom: 8.5vh;
-}
 
 
-
-.gall .screen {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    left: 10%;
-    width: 80%;
-    transform: translate(0,-50%);
-}
-
-#Experience_2 > .gall > .screen{
-    width: 100%;
-    left: 0;
-}
-
-
-.gall img{
-    display: block;
-    width: 100%;
-}
-
-.gall .tmb {
-    position: relative;
-    width : 12vw;
-}
-
-.gall .inner {
-    display: block;
-    position: relative;
-}
-
-
-.gall h4 {
-    font-size: 1.6vw;
-}
-
-.gall>li .inner {
-    margin: 0 3%;
-}
-
-#Experience_1 .tmb>img {
-    border-radius: 50%;
-}
-
-.experience-description{
-    padding-top : 20px;
-    /*font-family: bh2;*/
-}
-
-.experience-date{
-    font-size : 1.2vw;
-    margin-bottom: 15px;
-}
-
-.experience-role{
-    font-size: 1.2vw;
-    margin-top : 15px;
-    font-weight: 800;
-    margin-bottom: 2.5vh;
-}
-
-.experience-summary{
-    font-size : 1.1vw;
-}
-
-.experience-place{
-    font-family: bh3;
-}

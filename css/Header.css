@@ -15,7 +15,6 @@
         position: fixed;
         top: 4vh;
         left: 2vw;
-        width: 12.5vw;
     }
 
     .header .inner .logo a{
@@ -24,6 +23,7 @@
         transition-duration: 1s;
         text-decoration: none;
         color: rgba(0,0,0,.08);
+        display: block;
     }
 
     .header>.inner>.logo>a:hover{

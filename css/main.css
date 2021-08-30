@@ -1,9 +1,6 @@
 /* Universe*/
 
-@font-face {
-    font-family: 'bh';
-    src: url('../font/BMHANNAProOTF.otf') format('truetype');
-}
+
 
 @font-face {
     font-family: 'bh1';
@@ -26,7 +23,6 @@ body {
     word-break: keep-all;
     word-wrap: break-word;
     color: #000;
-    /*font-family: bh1;*/
 }
 
 

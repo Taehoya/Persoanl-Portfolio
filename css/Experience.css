@@ -1,4 +1,8 @@
 @media all and (min-width :768px) {
+    .experience-section{
+        padding-bottom: 0;
+    }
+
     .experience-section li {
         display: flex;
         margin-bottom: 8.5vh;
